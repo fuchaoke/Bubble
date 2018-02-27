@@ -5,8 +5,8 @@ public class BubbleSort {
         for(int num:arr){
             System.out.print(num+" ");
         }
-        for(int i=0;i<arr.length-1;i++){
-            for(int j=0;j<arr.length-1-i;j++){
+        for(int i=0;i<arr.length-1;i++){//一共要排序数组的长度-1次
+            for(int j=0;j<arr.length-1-i;j++){//选出该趟排序的最小值往前移动
                 if(arr[j]>arr[j+1]){
                     int temp=arr[j];
                     arr[j]=arr[j+1];
